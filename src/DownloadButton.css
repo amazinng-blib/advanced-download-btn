@@ -1,0 +1,56 @@
+/* src/DownloadButton.css */
+
+.dl-button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dl-button:hover {
+  background: #2980b9;
+}
+
+.dl-button .icon {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.dl-button .label {
+  display: inline-block;
+}
+
+.dl-button.active .progress {
+  width: 100%;
+  height: 4px;
+  background: #27ae60;
+  animation: progress-animation 4s linear forwards;
+}
+
+@keyframes progress-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.restart {
+  margin-top: 16px;
+  display: inline-block;
+  text-decoration: none;
+  color: #3498db;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.restart:hover {
+  color: #2980b9;
+}
